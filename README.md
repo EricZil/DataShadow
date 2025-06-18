@@ -22,7 +22,7 @@ DataShadow is your personal digital bodyguard in the wild west of the internet! 
 
 ## 📓 Devlog
 ### Devlog #3 - 404
-![Devlog #3](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/ykhr9e6ntq1ophcrqkt790thqkt1?response-content-disposition=inline%3B%20filename%3D%22devlog%233.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%233.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250618T140012Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a4e0994778221da86357b05751a4afb79bd1cc4841b40d1ea480e2ace1c3ffa7)
+![Devlog #3](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/ykhr9e6ntq1ophcrqkt790thqkt1?response-content-disposition=inline%3B%20filename%3D%22devlog%233.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%233.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250618T141000Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=8477f849e623090921638b2296fa1c181a7424cdf6500abf681c5932050ac6ca)
 
 Added a 404 page — easily the most loved page on the whole site (not even kidding).
 Also did some housekeeping: updated the README, added a license;)
