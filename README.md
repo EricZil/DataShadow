@@ -18,6 +18,8 @@ DataShadow is your personal digital bodyguard in the wild west of the internet! 
 
 **Because let's face it:** In today's world, asking if your data has been leaked isn't a question of "if" but "how many times?" 😱
 
+**Also!** DataShadow's bff - Claude AI ❤️
+
 > **⚠️ HEADS UP!** This project is just getting started! We're in the very early stages of development, so what you see now is just the beginning. Features mentioned below are what we're working towards, but they might change as we build. Stay tuned!
 
 ## 📓 Devlog
