@@ -21,6 +21,13 @@ DataShadow is your personal digital bodyguard in the wild west of the internet! 
 > **⚠️ HEADS UP!** This project is just getting started! We're in the very early stages of development, so what you see now is just the beginning. Features mentioned below are what we're working towards, but they might change as we build. Stay tuned!
 
 ## 📓 Devlog
+### Devlog #3 - 404
+![Devlog #3](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/ykhr9e6ntq1ophcrqkt790thqkt1?response-content-disposition=inline%3B%20filename%3D%22devlog%233.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%233.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250618T140012Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a4e0994778221da86357b05751a4afb79bd1cc4841b40d1ea480e2ace1c3ffa7)
+
+Added a 404 page — easily the most loved page on the whole site (not even kidding).
+Also did some housekeeping: updated the README, added a license;)
+
+Small update. Big heart. 💖
 
 ### Devlog #2 - ✨AwUeGsLoYme✨ v1 is here!
 ![Devlog #2](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/z2uv6io8wuyilhxgn7gzd9ie5e5w?response-content-disposition=inline%3B%20filename%3D%22devlog%232.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%232.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250618T132226Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fdc9d0969a6d134b4064e89d25ea4b775c1fca62209849eb481c09825bfe4026)
@@ -37,7 +44,7 @@ Stay tuned for chaos!
 
 ##
 
-## ✨ Features We're Building Soon
+## ✨ Features We're Build*/ing Soon
 
 - **Breach Checker**: Find out if your email or phone number appears in known data breaches
 - **Real-time Alerts**: Get notified when your info shows up in new leaks
