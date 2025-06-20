@@ -24,6 +24,7 @@ interface Breach {
     date: string;
     exposedData: string[];
     severity: 'High' | 'Medium' | 'Low';
+    domain?: string;
 }
 
 const demoResults: { email: string; breaches: Breach[] } = {
@@ -168,7 +169,7 @@ export default function Scan() {
                                         <div className="flex justify-between items-start mb-3">
                                             <div>
                                                 <h4 className="font-bold text-xl text-white group-hover:text-blue-300 transition-colors">{breach.name}</h4>
-                                                <p className="text-sm text-gray-500">{breach.domain} &bull; Breached on {breach.date}</p>
+                                                <p className="text-sm text-gray-500">{breach.domain ? `${breach.domain} &bull; ` : ''}Breached on {breach.date}</p>
                                             </div>
                                             <span className={`px-2.5 py-1 text-xs font-semibold rounded-full ${
                                                 breach.severity === 'High' ? 'bg-red-500/20 text-red-400' :
