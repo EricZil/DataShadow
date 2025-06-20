@@ -1,4 +1,5 @@
 import React from 'react';
+import ComingSoonBadge from './ComingSoonBadge';
 
 export default function Features() {
   return (
@@ -27,6 +28,7 @@ export default function Features() {
           
           {/* Real-time Alerts */}
           <div className="p-8 bg-[#111827] rounded-2xl border border-gray-800 relative hover:border-blue-500/30 transition-colors group">
+            <ComingSoonBadge />
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
               <div className="w-20 h-20 bg-[#1a2035] rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -43,20 +45,21 @@ export default function Features() {
             </div>
           </div>
           
-          {/* Protection Tips */}
+          {/* Protection Dashboard */}
           <div className="p-8 bg-[#111827] rounded-2xl border border-gray-800 relative hover:border-blue-500/30 transition-colors group">
+            <ComingSoonBadge />
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
               <div className="w-20 h-20 bg-[#1a2035] rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m-9 4h12M3 7h18M4 7h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7z" />
                 </svg>
               </div>
             </div>
             
             <div className="text-center pt-12">
-              <h3 className="text-xl font-bold mb-4 text-white">Protection Tips</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">Privacy Dashboard</h3>
               <p className="text-gray-400 leading-relaxed">
-                Get personalized recommendations to secure your accounts and protect your identity.
+                Get a complete overview of your digital footprint and manage your protection.
               </p>
             </div>
           </div>

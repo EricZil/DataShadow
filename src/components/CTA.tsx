@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function CTA() {
   return (
@@ -29,15 +30,15 @@ export default function CTA() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-5 pt-4">
-              <a href="/scan" className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-700 rounded-lg font-medium text-lg shadow-xl hover:shadow-2xl hover:bg-blue-50 transition-all duration-300 transform hover:-translate-y-1">
+              <Link href="/scan" className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-700 rounded-lg font-medium text-lg shadow-xl hover:shadow-2xl hover:bg-blue-50 transition-all duration-300 transform hover:-translate-y-1">
                 <span>Start Free Scan</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-              </a>
-              <a href="/learn" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white rounded-lg font-medium text-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1">
+              </Link>
+              <Link href="/how-it-works" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white rounded-lg font-medium text-lg backdrop-blur-sm hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1">
                 Learn How It Works
-              </a>
+              </Link>
             </div>
           </div>
           
@@ -80,10 +81,10 @@ export default function CTA() {
               <li className="flex items-start">
                 <div className="flex-shrink-0 w-6 h-6 bg-blue-500/20 rounded-full flex items-center justify-center mt-0.5 mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <span className="text-lg text-blue-100">Optional account for monitoring and alerts</span>
+                <span className="text-lg text-blue-100">Account for monitoring & alerts <span className="text-xs bg-yellow-400 text-yellow-900 font-bold px-2 py-0.5 rounded-full ml-1">Coming Soon</span></span>
               </li>
             </ul>
           </div>

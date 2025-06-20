@@ -23,10 +23,26 @@ DataShadow is your personal digital bodyguard in the wild west of the internet! 
 > **⚠️ HEADS UP!** This project is just getting started! We're in the very early stages of development, so what you see now is just the beginning. Features mentioned below are what we're working towards, but they might change as we build. Stay tuned!
 
 ## 📓 Devlog
+
+### Devlog #4 - ✨AwUeGsLoYme✨ just got hit with a bunch of pages
+![Devlog #4](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/dq1w18ef7jc647jx4lsma34rtvie?response-content-disposition=inline%3B%20filename%3D%22devlog%234.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%234.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250620%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250620T121429Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d81d35246ecbcf7414c3f67ca067cd70e9e20c48eb55ebdef167ccd69a98fc17)
+
+scan <br>
+about (don’t read it pls) <br>
+how it works (even tho i barely know) <br>
+legal stuff (so you don’t sue me) <br>
+also tweaked some layout things that I’ll probably undo later <br>
+
+next? <br>
+gonna throw this thing online <br>
+then ✨pretend to know what SEO and security means✨ before public demo <br>
+
+✨AwUeGsLoYme✨ continues to thrive in confusion.
+
 ### Devlog #3 - 404
 ![Devlog #3](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/ykhr9e6ntq1ophcrqkt790thqkt1?response-content-disposition=inline%3B%20filename%3D%22devlog%233.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%233.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250618T141000Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=8477f849e623090921638b2296fa1c181a7424cdf6500abf681c5932050ac6ca)
 
-Added a 404 page — easily the most loved page on the whole site (not even kidding).
+Added a 404 page — easily the most loved page on the whole site (not even kidding). <br>
 Also did some housekeeping: updated the README, added a license;)
 
 Small update. Big heart. 💖
@@ -34,25 +50,30 @@ Small update. Big heart. 💖
 ### Devlog #2 - ✨AwUeGsLoYme✨ v1 is here!
 ![Devlog #2](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/z2uv6io8wuyilhxgn7gzd9ie5e5w?response-content-disposition=inline%3B%20filename%3D%22devlog%232.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%232.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250618T132226Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fdc9d0969a6d134b4064e89d25ea4b775c1fca62209849eb481c09825bfe4026)
 
-The first full frontend pass is done... kinda. Trust me — there'll probably be like 3 more versions 'cause I'll start hating this one soon 💀 (not a frontend guy tbh).
+The first full frontend pass is done... kinda. Trust me — there'll probably be like 3 more versions 'cause I'll start hating this one soon 💀 (not a frontend guy tbh). <br>
 
 Next up: diving into legal stuff! Yes, the no one reads them privacy/terms pages... but still, don't sue me pls 🙃
 
 ### Devlog #1 - Welp, it's something ;P
 ![Devlog #1](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/cgvotn7dpdgonk31bhxq3bbc9y2b?response-content-disposition=inline%3B%20filename%3D%22devlog%231.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%231.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250618%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250618T132814Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=bf4ecf937fee723c18dad4fbbacf021cf216d9a7f9b2db1574a2119b7a42049a)
 
-I’m calling it: ✨AwUeGsLoYme✨ <br>
+I'm calling it: ✨AwUeGsLoYme✨ <br>
 Stay tuned for chaos!
 
-##
+## ✨ Core Features
 
-## ✨ Features We're Build*/ing Soon
+- **Data Breach Scanning**: Our core feature allows you to scan for your personal information across billions of breached records, using privacy-preserving techniques.
+  - Anonymous and secure scanning
+  - Comprehensive database of known breaches
+  - Instant results on your exposure
 
-- **Breach Checker**: Find out if your email or phone number appears in known data breaches
-- **Real-time Alerts**: Get notified when your info shows up in new leaks
-- **Protection Tips**: Personalized advice to secure your digital presence
-- **Breach Database**: Access to billions of leaked records (ethically, of course!)
-- **User-friendly Interface**: Because security shouldn't require a PhD
+## 🔮 Planned Features
+
+- **Continuous Monitoring & Alerts**: Get real-time alerts if your information is compromised in new breaches.
+- **Password Check**: Check if your passwords have been compromised.
+- **Privacy Dashboard**: A centralized dashboard to view your exposure and manage alerts.
+- **Domain Check**: Monitor an entire domain for compromised email accounts.
+- **Disposable Email Aliases**: Create unlimited email aliases to protect your primary email.
 
 ## 🛠️ Built With
 
@@ -60,13 +81,6 @@ Stay tuned for chaos!
 - [TypeScript](https://www.typescriptlang.org/) - For type safety
 - [Tailwind CSS](https://tailwindcss.com/) - For styling
 - A sprinkle of magic ✨ and a dash of humor 😄
-
-## 🔮 Future Ideas
-
-- **Privacy Passport**: A digital document showing all places your data exists online
-- **Breach Time Machine**: See what data of yours was exposed when
-- **Security Score**: Get a personal security rating based on your digital habits
-- **Shadow Cleaner**: Help remove your data from places it shouldn't be
 
 ## 🤝 Contribute
 
@@ -76,7 +90,7 @@ Found a bug? Have an idea? Want to contribute? Great! Open an issue or submit a 
 
 - The amazing HackClub community
 - All the hackers participating in Summer of Making
-- Coffee ☕, the true hero behind all coding projects
+- Coffee ☕, the true hero behind all coding projects (don't forget RedBull)
 
 ## 📝 License
 

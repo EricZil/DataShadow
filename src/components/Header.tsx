@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -6,25 +7,38 @@ export default function Header() {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <div className="bg-blue-500 w-10 h-10 rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(59,130,246,0.5)]">
-              <span className="text-white font-bold text-lg">DS</span>
-            </div>
-            <span className="text-xl font-bold text-white">DataShadow</span>
+            <Link href="/">
+              <div className="bg-blue-500 w-10 h-10 rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(59,130,246,0.5)] cursor-pointer">
+                <span className="text-white font-bold text-lg">DS</span>
+              </div>
+            </Link>
+            <Link href="/" className="text-xl font-bold text-white">DataShadow</Link>
           </div>
           <nav className="hidden md:block">
-            <ul className="flex space-x-10">
-              <li><a href="#features" className="text-gray-300 hover:text-white transition-colors font-medium">Features</a></li>
-              <li><a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors font-medium">How It Works</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors font-medium">About</a></li>
+            <ul className="flex items-center space-x-10">
+              <li><Link href="/scan" className="text-gray-300 hover:text-white transition-colors font-medium">Scan</Link></li>
+              <li><Link href="/features" className="text-gray-300 hover:text-white transition-colors font-medium">Features</Link></li>
+              <li><Link href="/how-it-works" className="text-gray-300 hover:text-white transition-colors font-medium">How It Works</Link></li>
+              <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors font-medium">About</Link></li>
+              <li className="relative group">
+                <span className="text-gray-500 cursor-not-allowed font-medium">Dashboard</span>
+                <span className="absolute -top-6 -right-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-0.5 rounded-full shadow-md">Soon</span>
+              </li>
             </ul>
           </nav>
           <div className="flex items-center space-x-4">
-            <button className="hidden sm:block px-6 py-2 rounded-full text-gray-300 hover:text-white transition-colors font-medium">
-              Log in
-            </button>
-            <button className="px-6 py-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-all font-medium shadow-[0_0_15px_rgba(59,130,246,0.5)]">
-              Sign up
-            </button>
+            <div className="relative group">
+              <button className="hidden sm:block px-6 py-2 rounded-full text-gray-500 cursor-not-allowed font-medium">
+                Log in
+              </button>
+              <span className="absolute -top-6 -right-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-0.5 rounded-full shadow-md">Soon</span>
+            </div>
+            <div className="relative group">
+              <button className="px-6 py-2 rounded-full bg-blue-800 text-gray-400 cursor-not-allowed font-medium shadow-lg">
+                Sign up
+              </button>
+              <span className="absolute -top-6 -right-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-0.5 rounded-full shadow-md">Soon</span>
+            </div>
             <button className="md:hidden text-gray-300">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />

@@ -37,7 +37,7 @@ export default function NotFound() {
           {/* Message */}
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-center">Page Not Found</h2>
           <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-lg text-center mb-8 md:mb-12">
-            We couldn't find the page you're looking for.
+            We couldn&apos;t find the page you&apos;re looking for.
           </p>
           
           {/* Security card - more compact on mobile */}

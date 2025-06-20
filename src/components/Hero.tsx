@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -12,9 +13,9 @@ export default function Hero() {
             DataShadow helps you monitor and protect your personal information from data breaches across the internet.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-3.5 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors shadow-[0_0_15px_rgba(59,130,246,0.5)] font-medium text-base">
+            <Link href="/scan" className="px-8 py-3.5 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors shadow-[0_0_15px_rgba(59,130,246,0.5)] font-medium text-base">
               Check Your Exposure
-            </button>
+            </Link>
             <button className="px-8 py-3.5 bg-transparent border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors font-medium text-base">
               Learn More
             </button>

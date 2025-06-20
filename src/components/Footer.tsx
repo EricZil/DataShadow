@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -42,7 +43,7 @@ export default function Footer() {
               <a href="https://summer.hack.club/qy" target="_blank" rel="noopener noreferrer" className="group w-fit">
                 <div className="flex items-center space-x-3 group-hover:-translate-y-0.5 transition-transform">
                   <div className="bg-gradient-to-br from-red-500 to-red-600 w-10 h-10 rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(239,68,68,0.5)] group-hover:shadow-[0_0_30px_rgba(239,68,68,0.6)] transition-all">
-                    <img src="https://summer.hackclub.com/assets/flag-orpheus-top-5ae5e11b.png" alt="Hack Club" className="h-6 w-auto" />
+                    <Image unoptimized src="https://summer.hackclub.com/assets/flag-orpheus-top-5ae5e11b.png" alt="Hack Club" width={24} height={24} className="h-6 w-auto" />
                   </div>
                   <div>
                     <div className="text-white font-bold group-hover:text-white transition-colors">Summer of Making</div>
@@ -94,25 +95,25 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-5">
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                    <a href="/privacy" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
                       Privacy
                       <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                    <a href="/terms" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
                       Terms
                       <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                    <a href="/security" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
                       Security
                       <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                    <a href="/compliance" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
                       Compliance
                       <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                     </a>
