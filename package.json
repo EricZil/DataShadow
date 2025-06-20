@@ -23,5 +23,9 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "@eslint/eslintrc": "^3"
-  }
+  },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "not dead"
+  ]
 }
