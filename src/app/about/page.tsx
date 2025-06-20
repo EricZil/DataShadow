@@ -51,7 +51,7 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">Hack Club</h3>
-                    <p className="text-red-400">Summer of Making 2023</p>
+                    <p className="text-red-400">Summer of Making 2025</p>
                   </div>
                 </div>
                 
@@ -60,7 +60,7 @@ export default function About() {
                 </p>
                 
                 <a 
-                  href="https://summer.hack.club" 
+                  href="https://summer.hack.club/qy" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-red-400 hover:text-red-300 transition-colors"
