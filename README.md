@@ -24,6 +24,14 @@ DataShadow is your personal digital bodyguard in the wild west of the internet! 
 
 ## 📓 Devlog
 
+### Devlog #5 - ✨AwUeGsLoYme✨ Public DEMO
+![Devlog #5](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/qjpgqep8cx7bxothr6z8d6qwqyjn?response-content-disposition=inline%3B%20filename%3D%22devlog%235.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%235.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250621%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250621T230457Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f17b170b75134dafd360e76c75706795993b5968816a3cafa72d7e3dea41cfa2)
+
+Optimised SEO, Security; <br>
+Updated legal pages info <br>
+New Breaches page with info about data leaks that will be added to the db. <br>
+And other minor fixes. (i'm tired - gn!)
+
 ### Devlog #4 - ✨AwUeGsLoYme✨ just got hit with a bunch of pages
 ![Devlog #4](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/dq1w18ef7jc647jx4lsma34rtvie?response-content-disposition=inline%3B%20filename%3D%22devlog%234.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%234.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250620%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250620T121429Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d81d35246ecbcf7414c3f67ca067cd70e9e20c48eb55ebdef167ccd69a98fc17)
 
