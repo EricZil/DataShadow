@@ -22,7 +22,11 @@ export default function HowItWorks() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">How It Works</h1>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-300 mb-8">
-              DataShadow empowers you to uncover your digital footprint without compromising your privacy. Our unique, privacy-preserving technology ensures your data remains anonymous throughout the process. Here&apos;s how we do it.
+            DataShadow helps you check if your info’s been leaked — without revealing it.
+            <br />
+            We hash your email, use a k-anonymity method, and never store anything.
+            <br />
+            Simple, private, and fast. No shady stuff.
             </p>
           </div>
         </div>
@@ -35,10 +39,12 @@ export default function HowItWorks() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Privacy by Design</h2>
               <p className="text-lg text-gray-300 mb-6">
-                DataShadow was built from the ground up with privacy as its core principle. Unlike conventional privacy tools that often require technical knowledge, our platform makes privacy protection accessible to everyone.
+              DataShadow was built with one goal: don&apos;t leak your info while checking for leaks.
+              <br />
+              No logins, no data storage, no tracking. Your email is hashed and checked using k-anonymity, so nothing sensitive ever touches the server directly.
               </p>
               <p className="text-lg text-gray-300">
-                We&apos;ve implemented advanced cryptographic techniques, zero-knowledge architectures, and k-anonymity principles to ensure your data remains private and secure at all times.
+              You get answers — we keep nothing.
               </p>
             </div>
             
@@ -57,8 +63,8 @@ export default function HowItWorks() {
                       <span className="text-blue-400 font-bold">01</span>
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold text-white mb-1">Zero Knowledge</h4>
-                      <p className="text-gray-300">We can&apos;t access your data, even if we wanted to</p>
+                      <h4 className="text-lg font-bold text-white mb-1">Zero Logging</h4>
+                      <p className="text-gray-300">We don&apos;t store or track your queries. Ever.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -66,8 +72,8 @@ export default function HowItWorks() {
                       <span className="text-blue-400 font-bold">02</span>
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold text-white mb-1">End-to-End Encryption</h4>
-                      <p className="text-gray-300">Your data is encrypted before it leaves your device</p>
+                      <h4 className="text-lg font-bold text-white mb-1">K-Anonymity</h4>
+                      <p className="text-gray-300">Only a fragment of your hashed input is sent — your full data stays private.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -75,8 +81,8 @@ export default function HowItWorks() {
                       <span className="text-blue-400 font-bold">03</span>
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold text-white mb-1">Open Source</h4>
-                      <p className="text-gray-300">Our code is transparent and verifiable</p>
+                      <h4 className="text-lg font-bold text-white mb-1">Transparent by Default</h4>
+                      <p className="text-gray-300">Frontend is open source. Backend isn&apos;t (yet), but we&apos;ll keep you informed.</p>
                     </div>
                   </li>
                 </ul>
@@ -99,10 +105,11 @@ export default function HowItWorks() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Privacy-Preserving Scans</h3>
               <p className="text-lg text-gray-300 mb-6">
-                When you perform a scan, we use a k-anonymity approach. This means your query is bundled with others, making it impossible to trace the search back to you.
+                When you scan, your email is hashed and partially sent — not the whole thing.
+                This k-anonymity trick means we never see your full address, and we never store anything.
               </p>
               <p className="text-lg text-gray-300">
-                This allows you to check for breaches without revealing your email address to us or any third party, ensuring complete privacy.
+                You get breach results. We get… nothing.
               </p>
             </div>
             
@@ -178,10 +185,10 @@ export default function HowItWorks() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Continuous Data Breach Monitoring</h3>
               <p className="text-lg text-gray-300 mb-6">
-                Our system will continuously scan the internet, including the dark web, for any signs of your personal information being exposed in new data breaches.
+                This isn’t live yet — but eventually, DataShadow will let you opt in to ongoing checks for new breaches tied to your email.
               </p>
               <p className="text-lg text-gray-300">
-                When a potential exposure is detected, you will receive an immediate alert with actionable steps to mitigate the risk.
+                No spam, no creepy tracking — just a heads-up if your info pops up somewhere shady.
               </p>
             </div>
           </div>
@@ -191,19 +198,19 @@ export default function HowItWorks() {
       {/* Technology section */}
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Our Technology Stack</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">What Powers DataShadow</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Tech 1 */}
             <div className="bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30 hover:border-blue-700/50 transition-all">
               <div className="bg-blue-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Advanced Cryptography</h3>
+              <h3 className="text-xl font-bold mb-2 text-white">SHA-1 Hashing + K-Anonymity</h3>
               <p className="text-gray-300">
-                We implement AES-256 encryption, the same standard used by governments to protect classified information, ensuring your data remains secure.
+                Your input gets hashed and trimmed so we never see the full thing — no storage, no tracking.
               </p>
             </div>
             
@@ -214,9 +221,9 @@ export default function HowItWorks() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Zero-Knowledge Architecture</h3>
+              <h3 className="text-xl font-bold mb-2 text-white">Frontend</h3>
               <p className="text-gray-300">
-                Our system is designed so that your sensitive data is only accessible to you, never to us or any third parties, even during data processing.
+                Built with modern web tools like Next.js & Tailwind. Fast, minimal, and responsive.
               </p>
             </div>
             
@@ -224,12 +231,12 @@ export default function HowItWorks() {
             <div className="bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30 hover:border-blue-700/50 transition-all">
               <div className="bg-blue-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-white">Biometric Authentication</h3>
+              <h3 className="text-xl font-bold mb-2 text-white">Backend</h3>
               <p className="text-gray-300">
-                Access to your DataShadow account can be secured using your device&apos;s biometric capabilities, adding an extra layer of protection.
+                Handles encrypted breach data. Not open source (yet) because, well… leaks contain leaks.
               </p>
             </div>
           </div>
@@ -244,9 +251,10 @@ export default function HowItWorks() {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
             
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Ready to Protect Your Digital Identity?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Join the Chaos (Mission*)</h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Take control of your digital footprint today. Find out where you&apos;ve been exposed and take action to secure your accounts.
+                Building a more private internet — one sketchy breach at a time.
+                Jump in or just cheer from the sidelines. 🫡
               </p>
               <Link href="/scan" className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all">
                 <span>Start a Free Scan</span>

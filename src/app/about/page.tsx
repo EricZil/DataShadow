@@ -22,7 +22,7 @@ export default function About() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">About DataShadow</h1>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-300 mb-8">
-              Built during Hack Club&apos;s Summer of Making to protect your digital identity in an increasingly vulnerable online world.
+              Built during Hack Club&apos;s Summer of Making 2025, DataShadow is a one-dev passion project designed to help people find out if their emails have been exposed in data breaches — without giving up their privacy in the process.
             </p>
           </div>
         </div>
@@ -56,7 +56,10 @@ export default function About() {
                 </div>
                 
                 <p className="text-gray-300 mb-4">
-                  DataShadow was born during Hack Club&apos;s Summer of Making, a global initiative that empowers students to build and launch projects that matter.
+                DataShadow was created during Hack Club&apos;s Summer of Making — a global event where students build stuff that actually matters (and have fun doing it).
+                </p>
+                <p className="text-gray-300 mb-4">
+                I wanted to create a tool that helps people check if their data has been leaked, without needing tech skills or giving up their privacy.
                 </p>
                 
                 <a 
@@ -65,7 +68,7 @@ export default function About() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-red-400 hover:text-red-300 transition-colors"
                 >
-                  <span>Learn more about Summer of Making</span>
+                  <span>Wanna know more about Summer of Making?</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -76,13 +79,13 @@ export default function About() {
             <div className="order-1 md:order-2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Our Story</h2>
               <p className="text-lg text-gray-300 mb-6">
-                DataShadow began as an ambitious project during Hack Club&apos;s Summer of Making, where a team of privacy-focused developers came together to address the growing threat of data breaches and identity theft.
+              DataShadow started as a solo project during Hack Club&apos;s Summer of Making — just one developer (hi, it&apos;s me 👋) trying to build something useful.
               </p>
               <p className="text-lg text-gray-300 mb-6">
-                Inspired by the community&apos;s emphasis on building technology that matters, we created a tool that would make advanced privacy protection accessible to everyone, not just those with technical backgrounds.
+              I wanted to create a tool that helps people check if their data has been leaked, without needing tech skills or giving up their privacy.
               </p>
               <p className="text-lg text-gray-300">
-                What started as a summer project has evolved into a comprehensive platform dedicated to protecting digital identities through innovative, privacy-preserving technology.
+              What began as a summer experiment is now a working platform that blends simplicity, speed, and privacy-first design — with more improvements on the way.
               </p>
             </div>
           </div>
@@ -95,7 +98,8 @@ export default function About() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Our Mission</h2>
             <p className="text-xl text-gray-300">
-              We believe privacy is a fundamental right that shouldn&apos;t require technical expertise to protect.
+            Privacy shouldn&apos;t be complicated — and it definitely shouldn&apos;t only be for tech nerds.
+            DataShadow exists to make privacy tools simple, accessible, and actually useful.
             </p>
           </div>
           
@@ -107,9 +111,9 @@ export default function About() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Privacy by Design</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Privacy First</h3>
               <p className="text-gray-300">
-                We implement privacy protection at every level, from our k-anonymity search technology to our zero-knowledge architecture.
+              From k-anonymity lookups to zero logging, your data stays yours.
               </p>
             </div>
             
@@ -121,9 +125,9 @@ export default function About() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Open Source</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Mostly Open Source</h3>
               <p className="text-gray-300">
-                In the spirit of Hack Club, our codebase is open source, allowing anyone to verify our security practices and privacy claims.
+              The frontend is public, backend is staying private (for now).
               </p>
             </div>
             
@@ -134,9 +138,9 @@ export default function About() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Community Driven</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Solo-Built, Community Inspired</h3>
               <p className="text-gray-300">
-                Built by and for the community, we&apos;re committed to creating tools that empower individuals to take control of their digital identities.
+              It&apos;s just me, but the Hack Club vibe kept it alive.
               </p>
             </div>
           </div>
@@ -148,15 +152,15 @@ export default function About() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Built by the Community</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Built by One, Boosted by Many</h2>
               <p className="text-lg text-gray-300 mb-6">
-                DataShadow is more than just a project—it&apos;s a community effort. We&apos;re proud to be part of the Hack Club ecosystem, where students and developers collaborate to build meaningful technology.
+              While DataShadow was built solo, it wouldn&apos;t exist without the Hack Club community.
               </p>
               <p className="text-lg text-gray-300 mb-6">
-                The Summer of Making provided us with the resources, mentorship, and community support needed to transform our idea into reality. Through collaborative coding sessions, design reviews, and feedback from privacy experts, we&apos;ve created a tool that truly serves its users.
+              Summer of Making gave me the motivation, support, and occasional chaos needed to ship something real.
               </p>
               <p className="text-lg text-gray-300">
-                Today, we continue to embrace the Hack Club ethos of learning by building and sharing knowledge openly with others.
+              No fancy teams. No expert reviews. Just learning by building — and sharing it along the way.
               </p>
             </div>
             
@@ -167,36 +171,36 @@ export default function About() {
                   <div className="flex items-center space-x-4">
                     <div className="bg-gradient-to-br from-blue-400 to-blue-600 w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white">Join Our Community</h3>
-                      <p className="text-gray-400">Collaborate with privacy advocates</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-gradient-to-br from-blue-400 to-blue-600 w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                       </svg>
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white">Contribute Code</h3>
-                      <p className="text-gray-400">Help improve our open source project</p>
+                      <p className="text-gray-400">frontend&apos;s open source</p>
                     </div>
                   </div>
                   
                   <div className="flex items-center space-x-4">
                     <div className="bg-gradient-to-br from-blue-400 to-blue-600 w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                       </svg>
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white">Spread the Word</h3>
-                      <p className="text-gray-400">Help us reach more people</p>
+                      <p className="text-gray-400">help others stay safe</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4">
+                    <div className="bg-gradient-to-br from-blue-400 to-blue-600 w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white">Be Loud</h3>
+                      <p className="text-gray-400">I feed on feedback & good vibes</p>
                     </div>
                   </div>
                 </div>
@@ -206,12 +210,13 @@ export default function About() {
         </div>
       </section>
       
-      {/* Team section */}
+      {/* Family section */}
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-white">DataShadow&apos;s Family</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-white">DataShadow&apos;s Entire Team</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-            Meet the developer behind DataShadow.
+          It’s just me — experimenting, learning, and building as I go. <br />
+          No big team. No VC. No fake titles (okay maybe just one below 👇).
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -230,8 +235,8 @@ export default function About() {
                     />
                   </div>
                   <h3 className="text-xl font-bold mb-1 text-white text-center">Eric Zilvytis</h3>
-                  <p className="text-blue-400 mb-4 text-center">CEO & CTO</p>
-                  <p className="text-gray-400 text-center">Summer of Making participant and passionate about privacy.</p>
+                  <p className="text-blue-400 mb-4 text-center">CEO? Sure. CTO? Why not.</p>
+                  <p className="text-gray-400 text-center">Builder of DataShadow. Summer of Making enjoyer. Privacy enjoyer. Still winging it.</p>
                 </div>
               </div>
             </div>
@@ -247,9 +252,11 @@ export default function About() {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
             
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Join Our Mission</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Join the Chaos (Mission*)</h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                We&apos;re building a future where privacy is respected and protected by default. Be part of the change.
+              Building a more private internet — one sketchy breach at a time.
+              <br />
+                Jump in or just cheer from the sidelines. 🫡
               </p>
               <Link href="/" className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all">
                 <span>Get Started</span>

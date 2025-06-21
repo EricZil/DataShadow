@@ -95,14 +95,14 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-5">
                   <li>
-                    <a href="/privacy" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
-                      Privacy
+                    <a href="/terms-of-service" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                      Terms of Service
                       <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
                   <li>
-                    <a href="/terms" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
-                      Terms
+                    <a href="/privacy" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                      Privacy
                       <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
@@ -112,11 +112,11 @@ export default function Footer() {
                       <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
-                  <li>
-                    <a href="/compliance" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                  <li className="flex items-center">
+                    <span className="text-gray-500 cursor-not-allowed inline-block py-1">
                       Compliance
-                      <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
-                    </a>
+                    </span>
+                    <span className="ml-2 px-2 py-0.5 text-xs bg-red-900/30 text-red-300 rounded-full border border-red-800/50 backdrop-blur-sm">Unavailable</span>
                   </li>
                 </ul>
               </div>

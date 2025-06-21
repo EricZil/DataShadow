@@ -18,12 +18,9 @@ export default function Header() {
             <ul className="flex items-center space-x-10">
               <li><Link href="/scan" className="text-gray-300 hover:text-white transition-colors font-medium">Scan</Link></li>
               <li><Link href="/features" className="text-gray-300 hover:text-white transition-colors font-medium">Features</Link></li>
+              <li><Link href="/breaches" className="text-gray-300 hover:text-white transition-colors font-medium">Breaches</Link></li>
               <li><Link href="/how-it-works" className="text-gray-300 hover:text-white transition-colors font-medium">How It Works</Link></li>
               <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors font-medium">About</Link></li>
-              <li className="relative group">
-                <span className="text-gray-500 cursor-not-allowed font-medium">Dashboard</span>
-                <span className="absolute -top-6 -right-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-0.5 rounded-full shadow-md">Soon</span>
-              </li>
             </ul>
           </nav>
           <div className="flex items-center space-x-4">

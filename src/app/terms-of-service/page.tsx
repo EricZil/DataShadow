@@ -61,12 +61,12 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: DataShadow helps protect your digital identity by checking if your data has been leaked in breaches.
+                  TL;DR: DataShadow helps protect your digital identity using privacy-first breach detection.
                 </p>
               </div>
               <div className="p-6 bg-[#0A1020] rounded-lg border border-blue-900/30 mb-4">
                 <p className="text-gray-300">
-                  DataShadow is a digital identity protection service that helps users discover if their personal information has been compromised in data breaches. Our service uses k-anonymity techniques and partial data hashing to protect your privacy while searching for your information in known data breach databases.
+                  DataShadow is a digital identity protection tool built around k-anonymity and client-side verification. It lets users check if their data has been exposed in breaches—without ever handing over full personal information. No tracking, no storage, no compromises.
                 </p>
               </div>
             </section>
@@ -81,14 +81,14 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: Keep your account information accurate and your password secure. You&apos;re responsible for all activity on your account.
+                  TL;DR: If you make an account, keep it accurate and secure. You&apos;re responsible for it.
                 </p>
               </div>
               <p className="mb-4 text-gray-300">
-                When you create an account with us, you must provide information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.
+                If you choose to create an account, you must provide accurate, up-to-date information. Failure to do so may result in suspension or termination of your access.
               </p>
               <p className="mb-4 text-gray-300">
-                You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password. You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
+                You&apos;re responsible for all activity under your account. Don&apos;t share your password. If you suspect unauthorized use, notify us immediately.
               </p>
             </section>
             
@@ -102,11 +102,11 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: All content and functionality of DataShadow belongs to us and is protected by law.
+                  TL;DR: Content and branding belong to DataShadow. Don&apos;t copy or misuse it.
                 </p>
               </div>
               <p className="mb-4 text-gray-300">
-                The Service and its original content, features, and functionality are and will remain the exclusive property of DataShadow and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of DataShadow.
+                All content, logos, and code (unless otherwise open sourced) belong to DataShadow. Unauthorized use, copying, or distribution of this content is prohibited unless explicitly permitted.
               </p>
             </section>
             
@@ -120,11 +120,11 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: Don&apos;t break laws, impersonate others, harm the service, or collect personal information.
+                  TL;DR: Don&apos;t break laws, impersonate people, or misuse the service.
                 </p>
               </div>
               <p className="mb-4 text-gray-300">
-                You agree not to use the Service:
+                You agree not to:
               </p>
               <ul className="list-none pl-0 mb-4 space-y-3">
                 <li className="flex items-start text-gray-300">
@@ -133,7 +133,7 @@ export default function TermsOfService() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  In any way that violates any applicable national or international law or regulation
+                  Violate any applicable laws
                 </li>
                 <li className="flex items-start text-gray-300">
                   <div className="bg-blue-500/10 p-1 rounded mr-3 mt-1">
@@ -141,7 +141,7 @@ export default function TermsOfService() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  To impersonate or attempt to impersonate DataShadow, a DataShadow employee, another user, or any other person or entity
+                  Impersonate anyone
                 </li>
                 <li className="flex items-start text-gray-300">
                   <div className="bg-blue-500/10 p-1 rounded mr-3 mt-1">
@@ -149,7 +149,7 @@ export default function TermsOfService() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  To engage in any other conduct that restricts or inhibits anyone&apos;s use or enjoyment of the Service, or which may harm DataShadow or users of the Service
+                  Harm the platform or its users
                 </li>
                 <li className="flex items-start text-gray-300">
                   <div className="bg-blue-500/10 p-1 rounded mr-3 mt-1">
@@ -157,7 +157,7 @@ export default function TermsOfService() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  To attempt to probe, scan, or test the vulnerability of the Service or to breach security or authentication measures
+                  Probe or exploit vulnerabilities
                 </li>
                 <li className="flex items-start text-gray-300">
                   <div className="bg-blue-500/10 p-1 rounded mr-3 mt-1">
@@ -165,8 +165,11 @@ export default function TermsOfService() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  To collect or track the personal information of others
+                  Collect data from others
                 </li>
+                <p className="mb-4 text-gray-300">
+                  This platform is meant for respectful, privacy-conscious use. Don&apos;t mess with that.
+                </p>
               </ul>
             </section>
             
@@ -180,12 +183,12 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: We&apos;re not liable for damages related to your use of the service or third-party content.
+                  TL;DR: We’re not responsible for damages related to use or misuse of the service.
                 </p>
               </div>
               <div className="p-6 bg-gradient-to-br from-[#0A1020] to-[#111827] rounded-lg border border-blue-900/30 mb-4">
                 <p className="mb-4 text-gray-300">
-                  In no event shall DataShadow, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
+                  To the fullest extent allowed by law, DataShadow is not liable for any indirect or consequential damages resulting from:
                 </p>
                 <ul className="list-none pl-0 space-y-3">
                   <li className="flex items-start text-gray-300">
@@ -194,7 +197,7 @@ export default function TermsOfService() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    Your access to or use of or inability to access or use the Service
+                    Your use or inability to use the service
                   </li>
                   <li className="flex items-start text-gray-300">
                     <div className="bg-blue-500/10 p-1 rounded mr-3 mt-1">
@@ -202,7 +205,7 @@ export default function TermsOfService() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    Any conduct or content of any third party on the Service
+                    Unauthorized access to your data
                   </li>
                   <li className="flex items-start text-gray-300">
                     <div className="bg-blue-500/10 p-1 rounded mr-3 mt-1">
@@ -210,7 +213,7 @@ export default function TermsOfService() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    Any content obtained from the Service
+                    Content accessed via the service
                   </li>
                   <li className="flex items-start text-gray-300">
                     <div className="bg-blue-500/10 p-1 rounded mr-3 mt-1">
@@ -218,8 +221,11 @@ export default function TermsOfService() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    Unauthorized access, use or alteration of your transmissions or content
+                    Acts of third parties
                   </li>
+                  <p className="mb-4 text-gray-300">
+                  This platform is meant for respectful, privacy-conscious use. Don&apos;t mess with that.
+                </p>
                 </ul>
               </div>
             </section>
@@ -234,14 +240,11 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: The service is provided &quot;as is&quot; without warranties of any kind.
+                  TL;DR: The service is provided “as is.” No guarantees.
                 </p>
               </div>
               <p className="mb-4 text-gray-300">
-                Your use of the Service is at your sole risk. The Service is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
-              </p>
-              <p className="mb-4 text-gray-300">
-                DataShadow does not warrant that the Service will be uninterrupted, timely, secure, or error-free, or that defects will be corrected. We do not warrant that the results that may be obtained from the use of the Service will be accurate or reliable.
+                This platform is offered without warranties of any kind. We don&apos;t guarantee accuracy, availability, or security, though we do our best. Use it as-is, at your discretion.
               </p>
             </section>
             
@@ -255,15 +258,13 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: These terms are governed by the laws of the United States.
+                  TL;DR: These terms are governed by EU law, especially GDPR, since DataShadow operates in the European Union.
                 </p>
               </div>
               <p className="mb-4 text-gray-300">
-                These Terms shall be governed and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.
+                These Terms are governed by the laws of the European Union and applicable EU member state laws, with particular reference to the General Data Protection Regulation (GDPR). Disputes will be handled under EU or your local EEA jurisdiction, depending on applicable consumer protection rules.
               </p>
-              <p className="mb-4 text-gray-300">
-                Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.
-              </p>
+
             </section>
             
             <section className="mb-10">
@@ -276,14 +277,11 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: We may update these terms, and if you keep using the service, you&apos;re agreeing to the changes.
+                  TL;DR: Terms may change. Continued use means you agree to the updates.
                 </p>
               </div>
               <p className="mb-4 text-gray-300">
-                We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days&apos; notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
-              </p>
-              <p className="mb-4 text-gray-300">
-                By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.
+                We may revise these Terms at any time. We&apos;ll post changes on this page. By continuing to use the service after changes go live, you agree to the new terms.
               </p>
             </section>
             
@@ -292,23 +290,15 @@ export default function TermsOfService() {
                 <span className="bg-blue-500/20 w-8 h-8 rounded-lg flex items-center justify-center mr-3">10</span>
                 Contact Us
               </h2>
-              <div className="mb-4 p-3 bg-blue-900/20 border border-blue-800/30 rounded-lg">
-                <p className="text-sm font-medium text-blue-300 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  TL;DR: Questions about these terms? Contact legal@datashadow.dev
-                </p>
-              </div>
               <div className="p-6 bg-[#0A1020] rounded-lg border border-blue-900/30 mb-4 hover:border-blue-700/50 transition-colors duration-300">
                 <p className="text-gray-300 mb-3">
-                  If you have any questions about these Terms, please contact us at:
+                  For any questions or legal inquiries, contact:
                 </p>
                 <div className="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span className="text-blue-400 font-medium">legal@datashadow.dev</span>
+                  <span className="text-blue-400 font-medium">eric@nezser.com</span>
                 </div>
               </div>
             </section>
@@ -320,7 +310,7 @@ export default function TermsOfService() {
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          Last Updated: June 2025
+          Last Updated: June 22, 2025
         </div>
         
         {/* Back to home */}

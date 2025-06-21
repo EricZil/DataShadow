@@ -22,7 +22,7 @@ export default function Features() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">DataShadow Features</h1>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-300 mb-8">
-              Advanced privacy protection tools designed to keep your digital identity secure.
+              Tools built to help you stay private, stay safe, and stay in control — no tech degree required.
             </p>
           </div>
         </div>
@@ -280,9 +280,9 @@ export default function Features() {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
             
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Ready to Take Control of Your Privacy?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Join the Chaos (Mission*)</h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Join DataShadow today and experience the peace of mind that comes with comprehensive privacy protection.
+                Building a more private internet — one sketchy breach at a time. Jump in or just cheer from the sidelines. 🫡
               </p>
               <Link href="/" className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all">
                 <span>Get Started</span>
