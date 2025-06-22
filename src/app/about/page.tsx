@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 
 export default function About() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10]">
+    <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10] overflow-hidden">
       <Header />
       
       {/* Background elements */}
@@ -215,7 +215,7 @@ export default function About() {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-white">DataShadow&apos;s Entire Team</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-12">
-          It’s just me — experimenting, learning, and building as I go. <br />
+          It&apos;s just me — experimenting, learning, and building as I go. <br />
           No big team. No VC. No fake titles (okay maybe just one below 👇).
           </p>
           

@@ -1,9 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from 'next/link'; 
 
 export default function SecurityPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10] text-white">
+    <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10] overflow-hidden">
+      
       {/* Background elements */}
       <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-blue-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-blue-500/5 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
@@ -275,7 +276,7 @@ export default function SecurityPage() {
                   </div>
                   <div>
                     <span className="font-medium text-white">Principle of Least Privilege:</span>
-                    <span className="text-gray-300"> Internal access controls follow strict need-to-know principles—even if it’s mostly just me.</span>
+                    <span className="text-gray-300"> Internal access controls follow strict need-to-know principles—even if it&apos;s mostly just me.</span>
                   </div>
                 </li>
               </ul>
@@ -295,7 +296,7 @@ export default function SecurityPage() {
                 </p>
               </div>
               <p className="mb-4 text-gray-300">
-                Transparency matters. That’s why the frontend code is fully open source and available on GitHub. The backend is not public (yet) since it handles sensitive breach data. Still, I’ll document how key processes work—privacy deserves clarity.
+                Transparency matters. That&apos;s why the frontend code is fully open source and available on GitHub. The backend is not public (yet) since it handles sensitive breach data. Still, I&apos;ll document how key processes work—privacy deserves clarity.
               </p>
               <div className="p-6 bg-[#0A1020] rounded-lg border border-blue-900/30 mb-6 flex items-center justify-between hover:border-blue-700/50 transition-colors duration-300">
                 <div>
@@ -321,7 +322,7 @@ export default function SecurityPage() {
                 </p>
               </div>
               <p className="mb-4 text-gray-300">
-                I don’t run a formal bounty program (yet), but I welcome responsible disclosures.
+                I don&apos;t run a formal bounty program (yet), but I welcome responsible disclosures.
               </p>
               <div className="p-6 bg-[#0A1020] rounded-lg border border-blue-900/30">
                 <h3 className="text-lg font-semibold text-white mb-3">Responsible Disclosure Guidelines</h3>
@@ -411,7 +412,7 @@ export default function SecurityPage() {
               </ul>
               <div className="p-6 bg-[#0A1020] rounded-lg border border-blue-900/30 mb-4 hover:border-blue-700/50 transition-colors duration-300">
                 <p className="text-gray-300 mb-3">
-                  If formal certifications become available, they’ll be listed here. For questions, contact:
+                  If formal certifications become available, they&apos;ll be listed here. For questions, contact:
                 </p>
                 <div className="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -3,7 +3,8 @@ import Link from 'next/link';
 
 export default function TermsOfService() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10] text-white">
+    <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10] overflow-hidden">
+      
       {/* Background elements */}
       <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-blue-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-blue-500/5 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
@@ -183,7 +184,7 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: We’re not responsible for damages related to use or misuse of the service.
+                  TL;DR: We&apos;re not responsible for damages related to use or misuse of the service.
                 </p>
               </div>
               <div className="p-6 bg-gradient-to-br from-[#0A1020] to-[#111827] rounded-lg border border-blue-900/30 mb-4">
@@ -240,7 +241,7 @@ export default function TermsOfService() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  TL;DR: The service is provided “as is.” No guarantees.
+                  TL;DR: The service is provided &quot;as is.&quot; No guarantees.
                 </p>
               </div>
               <p className="mb-4 text-gray-300">

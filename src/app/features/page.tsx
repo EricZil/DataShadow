@@ -6,7 +6,7 @@ import ComingSoonBadge from '../../components/ComingSoonBadge';
 
 export default function Features() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10]">
+    <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10] overflow-hidden">
       <Header />
       
       {/* Background elements */}

@@ -1,13 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import ComingSoonBadge from '../../components/ComingSoonBadge';
 
 export default function HowItWorks() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10]">
-      <Header />
+    <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10] overflow-hidden">
       
       {/* Background elements */}
       <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-blue-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
@@ -22,7 +19,7 @@ export default function HowItWorks() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">How It Works</h1>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-300 mb-8">
-            DataShadow helps you check if your info’s been leaked — without revealing it.
+            DataShadow helps you check if your info&apos;s been leaked — without revealing it.
             <br />
             We hash your email, use a k-anonymity method, and never store anything.
             <br />
@@ -185,7 +182,7 @@ export default function HowItWorks() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Continuous Data Breach Monitoring</h3>
               <p className="text-lg text-gray-300 mb-6">
-                This isn’t live yet — but eventually, DataShadow will let you opt in to ongoing checks for new breaches tied to your email.
+                This isn&apos;t live yet — but eventually, DataShadow will let you opt in to ongoing checks for new breaches tied to your email.
               </p>
               <p className="text-lg text-gray-300">
                 No spam, no creepy tracking — just a heads-up if your info pops up somewhere shady.
@@ -266,8 +263,6 @@ export default function HowItWorks() {
           </div>
         </div>
       </section>
-      
-      <Footer />
     </div>
   );
 } 
