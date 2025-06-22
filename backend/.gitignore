@@ -1,0 +1,25 @@
+# Ignore IDE and OS files
+.vscode/
+.idea/
+*.DS_Store
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore generated data files
+pwned-data/
+
+# Ignore raw sensitive data
+breached-datasets/
+
+# R2 upload script (for now)
+ingestion/
+
+# Ignore environment files
+.env 
