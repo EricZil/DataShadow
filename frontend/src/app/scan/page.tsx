@@ -3,6 +3,49 @@
 import React, { useState } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import { sha1 } from '../../lib/crypto';
+
+const DisclaimerPopup = ({ onClose }: { onClose: () => void }) => (
+    <>
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40" onClick={onClose}></div>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <div 
+                className="bg-gradient-to-br from-[#111827] to-[#1f2937] border border-blue-900/50 rounded-2xl shadow-2xl max-w-lg w-full animate-fade-in-up"
+                onClick={(e) => e.stopPropagation()}
+            >
+                <div className="p-6 border-b border-blue-900/30 flex justify-between items-center">
+                    <h2 className="text-xl font-bold text-white">Scanner Unavailable</h2>
+                    <button onClick={onClose} className="text-gray-400 hover:text-white transition-colors">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+                <div className="p-6 bg-yellow-500/10">
+                    <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0">
+                            <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" /></svg>
+                        </div>
+                        <div>
+                            <p className="text-gray-300 leading-relaxed">
+                                The scan functionality is currently not accessible due to backend work in progress.
+                            </p>
+                            <p className="text-gray-400 text-sm mt-3">
+                                More information and updates will be posted to the devlogs on SoM (Summer of Making).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4 bg-[#0A0E17]/50 border-t border-blue-900/30 text-right">
+                    <button
+                        onClick={onClose}
+                        className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-colors"
+                    >
+                        Go Back
+                    </button>
+                </div>
+            </div>
+        </div>
+    </>
+);
 
 const maskEmail = (email: string): string => {
     const parts = email.split('@');
@@ -27,24 +70,6 @@ interface Breach {
     domain?: string;
 }
 
-const demoResults: { email: string; breaches: Breach[] } = {
-    email: 'test@example.com',
-    breaches: [
-        {
-            name: 'Naz.API',
-            date: '2023-09-20',
-            exposedData: ['Email', 'Password'],
-            severity: 'High',
-        },
-        {
-            name: 'ALIEN TXTBASE',
-            date: '2025-02',
-            exposedData: ['Email', 'Password'],
-            severity: 'Medium',
-        }
-    ],
-};
-
 const DataIcon = ({ dataType, className }: { dataType: string; className: string }) => {
     const iconMap: { [key: string]: React.ReactNode } = {
         'Email': <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>,
@@ -57,24 +82,72 @@ const DataIcon = ({ dataType, className }: { dataType: string; className: string
 }
 
 export default function Scan() {
-    const [email, setEmail] = useState('test@example.com');
+    const [email, setEmail] = useState('');
     const [isScanning, setIsScanning] = useState(false);
     const [scanCompleted, setScanCompleted] = useState(false);
+    const [isPwned, setIsPwned] = useState(false);
     const [maskedEmail, setMaskedEmail] = useState('');
+    const [foundBreaches, setFoundBreaches] = useState<Breach[]>([]);
+    const [debugMessage, setDebugMessage] = useState<string | null>(null);
+    const [showDisclaimer, setShowDisclaimer] = useState(true);
 
-    const handleScan = () => {
-        if (!email) return;
-        setScanCompleted(false);
-        setIsScanning(true);
-        setMaskedEmail(maskEmail(email));
-        setTimeout(() => {
-            setIsScanning(false);
-            setScanCompleted(true);
-        }, 2500);
+    const handleScan = async () => {
+        if (showDisclaimer) {
+            if (!email) return;
+
+            setIsScanning(true);
+            setScanCompleted(false);
+            setIsPwned(false);
+            setFoundBreaches([]);
+            setMaskedEmail(maskEmail(email));
+            setDebugMessage(null);
+
+            try {
+                const hash = await sha1(email);
+                const prefix = hash.substring(0, 5);
+                const suffix = hash.substring(5);
+
+                const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+                if (!apiUrl) {
+                    const error = "API URL is not configured.";
+                    console.error(error);
+                    setDebugMessage(error);
+                    setIsScanning(false);
+                    return;
+                }
+                
+                const baseUrl = apiUrl.endsWith('/') ? apiUrl.slice(0, -1) : apiUrl;
+                const response = await fetch(`${baseUrl}/api/${prefix}?suffix=${suffix}`);
+
+                if (response.ok) {
+                    const matches: Breach[] = await response.json();
+                    
+                    if (matches.length > 0) {
+                        setIsPwned(true);
+                        setFoundBreaches(matches);
+                    } else {
+                        setIsPwned(false);
+                    }
+                } else {
+                    const errorText = await response.text();
+                    const error = `API Error: ${response.status} ${response.statusText}. Response: ${errorText}`;
+                    console.error(error);
+                    setDebugMessage(error);
+                    setIsPwned(false);
+                }
+            } catch (error: unknown) {
+                const errorMessage = `Failed to perform scan: ${error instanceof Error ? error.message : String(error)}`;
+                console.error(errorMessage, error);
+                setDebugMessage(errorMessage);
+            } finally {
+                setIsScanning(false);
+                setScanCompleted(true);
+            }
+        }
     };
 
-    const allExposedData = scanCompleted
-        ? [...new Set(demoResults.breaches.flatMap((b: Breach) => b.exposedData))]
+    const allExposedData = scanCompleted && isPwned
+        ? [...new Set(foundBreaches.flatMap((b: Breach) => b.exposedData))]
         : [];
 
     return (
@@ -90,7 +163,7 @@ export default function Scan() {
                     <div className="max-w-3xl mx-auto">
                         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Discover Your Digital Shadow</h1>
                         <p className="text-xl text-gray-300 mb-8">
-                            Enter an email address to scan for exposed data across the web. This is a demo using mock data.
+                            Enter an email address to scan for exposed data across the web.
                         </p>
                         
                         <div className="relative max-w-xl mx-auto mb-8 group">
@@ -101,6 +174,7 @@ export default function Scan() {
                                 className="w-full bg-[#111827]/80 backdrop-blur-sm border border-blue-900/50 rounded-lg py-4 pl-12 pr-32 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
+                                onClick={() => setShowDisclaimer(true)}
                             />
                             <button 
                                 onClick={handleScan}
@@ -128,22 +202,30 @@ export default function Scan() {
                                     <div className="w-full text-left">
                                         <div className="text-center mb-8 opacity-0 animate-fade-in-up" style={{animationDelay: '0ms'}}>
                                             <h3 className="text-3xl font-bold text-white mb-2">Scan Complete</h3>
-                                            <p className="text-gray-300">Found <span className="text-red-400 font-bold">{demoResults.breaches.length} breaches</span> for <span className="font-mono text-blue-300">{maskedEmail}</span></p>
-                                            {allExposedData.length > 0 && (
-                                                <div className="mt-4 border-t border-blue-900/30 pt-4">
-                                                    <p className="text-sm text-gray-400">Key Exposures:</p>
-                                                    <div className="flex flex-wrap justify-center gap-2 mt-2">
-                                                        {allExposedData.map((type: string) => (
-                                                            <span key={type} className="text-xs bg-gray-700/50 text-gray-300 px-2 py-1 rounded-md">
-                                                                {type}
-                                                            </span>
-                                                        ))}
-                                                    </div>
-                                                </div>
+                                            {isPwned ? (
+                                                <>
+                                                    <p className="text-gray-300">Found <span className="text-red-400 font-bold">{foundBreaches.length} {foundBreaches.length === 1 ? 'breach' : 'breaches'}</span> for <span className="font-mono text-blue-300">{maskedEmail}</span></p>
+                                                    {allExposedData.length > 0 && (
+                                                        <div className="mt-4 border-t border-blue-900/30 pt-4">
+                                                            <p className="text-sm text-gray-400">Key Exposures:</p>
+                                                            <div className="flex flex-wrap justify-center gap-2 mt-2">
+                                                                {allExposedData.map((type: string) => (
+                                                                    <span key={type} className="text-xs bg-gray-700/50 text-gray-300 px-2 py-1 rounded-md">
+                                                                        {type}
+                                                                    </span>
+                                                                ))}
+                                                            </div>
+                                                        </div>
+                                                    )}
+                                                </>
+                                            ) : (
+                                                <p className="text-gray-300">
+                                                    <span className="text-green-400 font-bold">No breaches found</span> for <span className="font-mono text-blue-300">{maskedEmail}</span>.
+                                                </p>
                                             )}
                                         </div>
                                         <div className="space-y-4">
-                                            {demoResults.breaches.map((breach: Breach, index: number) => (
+                                            {isPwned && foundBreaches.map((breach: Breach, index: number) => (
                                                 <div 
                                                     key={index} 
                                                     className="bg-[#0A0E17]/50 p-5 rounded-lg border border-blue-900/40 opacity-0 animate-fade-in-up group hover:border-blue-700/60 hover:bg-[#0A0E17]/70 transition-all"
@@ -180,12 +262,21 @@ export default function Scan() {
                                 ) : (
                                     <div className="text-gray-400 animate-fade-in-up">Enter an email and click &quot;Scan Now&quot; to see the results.</div>
                                 )}
+                                {debugMessage && (
+                                    <div className="mt-6 p-4 bg-red-900/30 border border-red-500/50 rounded-lg text-left">
+                                        <h4 className="font-bold text-red-300">Debugging Information:</h4>
+                                        <pre className="text-sm text-red-200 whitespace-pre-wrap break-all mt-2">{debugMessage}</pre>
+                                    </div>
+                                )}
                             </div>
                         </div>
                         
                     </div>
                 </div>
             </section>
+
+            {showDisclaimer && <DisclaimerPopup onClose={() => window.history.back()} />}
+
             <Footer />
         </div>
     );

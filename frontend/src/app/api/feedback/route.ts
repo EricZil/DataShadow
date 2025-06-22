@@ -14,7 +14,7 @@ export async function POST(request: Request) {
   console.log("📨 Received feedback submission:", JSON.stringify(payload, null, 2));
 
   try {
-    if (!process.env.NOTION_API_KEY || !process.env.NOTION_DATABASE_ID) {
+    if (!process.env.NOTION_API_KEY || !process.env.NOTION_FEEDBACK_DATABASE_ID) {
       console.error('❌ CONFIG ERROR: Missing Notion API Key or Database ID in .env.local');
       return NextResponse.json(
         { error: 'Server configuration error. Please check environment variables.' },
@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     };
 
     const response = await notion.pages.create({
-      parent: { database_id: process.env.NOTION_DATABASE_ID },
+      parent: { database_id: process.env.NOTION_FEEDBACK_DATABASE_ID },
       properties: {
         Title: {
           title: [

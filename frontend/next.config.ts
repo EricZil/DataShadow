@@ -1,9 +1,17 @@
 import type { NextConfig } from "next";
 
+const csp = `
+  default-src 'self';
+  connect-src 'self' ${process.env.NEXT_PUBLIC_API_URL};
+  img-src 'self' https://summer.hackclub.com https://avatars.githubusercontent.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval';
+  style-src 'self' 'unsafe-inline';
+`.replace(/\s{2,}/g, ' ').trim();
+
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
-    value: "default-src 'self'; img-src 'self' https://summer.hackclub.com https://avatars.githubusercontent.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
+    value: csp
   },
   {
     key: "X-Content-Type-Options",

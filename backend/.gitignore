@@ -13,7 +13,8 @@ __pycache__/
 *.pyc
 
 # Ignore generated data files
-pwned-data/
+pwned-data*
+pwned-passwords*
 
 # Ignore raw sensitive data
 breached-datasets/
@@ -23,3 +24,4 @@ ingestion/
 
 # Ignore environment files
 .env 
+.vercel
