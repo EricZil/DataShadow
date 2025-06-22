@@ -24,6 +24,14 @@ DataShadow is your personal digital bodyguard in the wild west of the internet! 
 
 ## 📓 Devlog
 
+### Devlog #5 - Feedback feature
+![Devlog #6](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/j5wsmz4bf13nhhdhvqfinp5c8r9f?response-content-disposition=inline%3B%20filename%3D%22devlog%236.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%236.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250622%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250622T113348Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=22985584b9da9381bfeae5697c32f37e79d775b1ed26993e9e849389261517f9)
+
+Added a feedback/bug reporting system (Notion-backed, of course). <br>
+Now you can politely yell at me if something breaks. <br>
+
+Also fixed some cursed CSS that was fighting for its life.
+
 ### Devlog #5 - ✨AwUeGsLoYme✨ Public DEMO
 ![Devlog #5](https://journey.90e2da927f7b2f6c30f10f86d1b5e679.r2.cloudflarestorage.com/qjpgqep8cx7bxothr6z8d6qwqyjn?response-content-disposition=inline%3B%20filename%3D%22devlog%235.png%22%3B%20filename%2A%3DUTF-8%27%27devlog%235.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=14147de7f716b4f968218760dfed0809%2F20250621%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250621T230457Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f17b170b75134dafd360e76c75706795993b5968816a3cafa72d7e3dea41cfa2)
 
