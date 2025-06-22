@@ -138,6 +138,22 @@ button, .btn {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
+/* Fade in up animation */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out forwards;
+}
+
 /* Input focus styles */
 input:focus {
   outline: none;

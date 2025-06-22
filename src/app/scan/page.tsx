@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 const maskEmail = (email: string): string => {
     const parts = email.split('@');
@@ -77,7 +79,7 @@ export default function Scan() {
 
     return (
         <div className="relative flex flex-col min-h-screen bg-gradient-to-b from-[#0A0E17] to-[#070A10] overflow-hidden">
-            
+            <Header />
             {/* Background elements */}
             <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-blue-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-blue-500/5 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
@@ -184,6 +186,7 @@ export default function Scan() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     );
 } 
