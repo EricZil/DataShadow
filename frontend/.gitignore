@@ -47,7 +47,6 @@ next-env.d.ts
 /src/app/admin
 /src/app/dev
 /src/app/api/test*
-/src/app/api/check
 /src/app/api/debug
 /src/app/api/direct
 
