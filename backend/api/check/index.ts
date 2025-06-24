@@ -65,14 +65,6 @@ async function getBreachesDb(): Promise<BreachDb> {
 }
 
 async function handler(req: VercelRequest, res: VercelResponse) {
-    // Debug logging for incoming query params
-    console.log('DEBUG /api/check:', {
-        prefix: req.query.prefix,
-        prefixType: typeof req.query.prefix,
-        suffix: req.query.suffix,
-        suffixType: typeof req.query.suffix,
-        query: req.query
-    });
     // Set CORS headers
     res.setHeader('Access-Control-Allow-Origin', FRONTEND_URL || '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
