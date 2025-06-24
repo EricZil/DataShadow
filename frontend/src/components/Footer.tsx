@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -16,13 +17,13 @@ export default function Footer() {
         {/* Main footer content with premium grid layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16">
           {/* Brand column - expanded width */}
-          <div className="md:col-span-5 space-y-8">
-            <div className="flex items-center space-x-3">
+          <div className="md:col-span-4 space-y-8">
+            <Link href="/" className="flex items-center space-x-3">
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 w-12 h-12 rounded-xl flex items-center justify-center shadow-[0_0_25px_rgba(59,130,246,0.5)] backdrop-blur-sm">
                 <span className="text-white font-bold text-xl">DS</span>
               </div>
               <span className="text-2xl font-bold tracking-tight">DataShadow</span>
-            </div>
+            </Link>
             
             <p className="text-gray-400 max-w-md text-lg leading-relaxed">
               Protecting your digital identity in an increasingly vulnerable online world.
@@ -55,8 +56,42 @@ export default function Footer() {
           </div>
           
           {/* Links columns with premium styling */}
-          <div className="md:col-span-7">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
+          <div className="md:col-span-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-16">
+              {/* Pages column - NEW */}
+              <div>
+                <h3 className="text-lg font-semibold mb-8 flex items-center">
+                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 animate-pulse"></div>
+                  Pages
+                </h3>
+                <ul className="space-y-5">
+                  <li>
+                    <Link href="/scan" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                      Scan
+                      <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/breaches" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                      Breaches
+                      <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/how-it-works" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                      How It Works
+                      <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                      About
+                      <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              
               {/* Product column */}
               <div>
                 <h3 className="text-lg font-semibold mb-8 flex items-center">
@@ -65,10 +100,10 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-5">
                   <li>
-                    <a href="#features" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
+                    <Link href="/features" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">
                       Features
                       <span className="absolute left-0 bottom-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300"></span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="flex items-center">
                     <a href="#" className="text-gray-400 hover:text-white transition-colors inline-block py-1 relative group">

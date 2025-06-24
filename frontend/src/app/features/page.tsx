@@ -18,12 +18,67 @@ export default function Features() {
       {/* Hero section */}
       <section className="relative pt-20 pb-16 md:pt-28 md:pb-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">DataShadow Features</h1>
-            <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-300 mb-8">
-              Tools built to help you stay private, stay safe, and stay in control — no tech degree required.
-            </p>
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="md:w-1/2 mb-10 md:mb-0">
+              <div className="max-w-2xl">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
+                  Premium Features for <span className="text-blue-400">Ultimate Protection</span>
+                </h1>
+                <div className="h-1 w-24 bg-gradient-to-r from-blue-400 to-blue-600 mb-8"></div>
+                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                  Tools built to help you stay private, stay safe, and stay in control — no tech degree required.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Link href="/scan" className="px-8 py-3.5 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors shadow-[0_0_15px_rgba(59,130,246,0.5)] font-medium text-base">
+                    Try It Now
+                  </Link>
+                  <Link href="/how-it-works" className="px-8 py-3.5 bg-transparent border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors font-medium text-base">
+                    How It Works
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-1/2 relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl"></div>
+              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-hidden shadow-[0_0_25px_rgba(59,130,246,0.2)]">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-4">
+                    <div className="h-24 bg-gradient-to-br from-[#1a2035] to-[#1f2937] rounded-xl flex items-center justify-center p-4 transform hover:scale-105 transition-transform shadow-lg">
+                      <div className="text-center">
+                        <div className="text-blue-400 font-bold text-lg">100%</div>
+                        <div className="text-gray-400 text-sm">Secure</div>
+                      </div>
+                    </div>
+                    <div className="h-32 bg-gradient-to-br from-[#1a2035] to-[#1f2937] rounded-xl flex items-center justify-center p-4 transform hover:scale-105 transition-transform shadow-lg">
+                      <div className="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-blue-400 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <div className="text-gray-300 text-sm">Advanced Protection</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="h-32 bg-gradient-to-br from-[#1a2035] to-[#1f2937] rounded-xl flex items-center justify-center p-4 transform hover:scale-105 transition-transform shadow-lg">
+                      <div className="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-blue-400 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <div className="text-gray-300 text-sm">Breach Detection</div>
+                      </div>
+                    </div>
+                    <div className="h-24 bg-gradient-to-br from-[#1a2035] to-[#1f2937] rounded-xl flex items-center justify-center p-4 transform hover:scale-105 transition-transform shadow-lg">
+                      <div className="text-center">
+                        <div className="text-blue-400 font-bold text-lg">24/7</div>
+                        <div className="text-gray-400 text-sm">Monitoring</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl"></div>
+                <div className="absolute -top-3 -left-3 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -31,39 +86,52 @@ export default function Features() {
       {/* Key Features section */}
       <section className="py-16 md:py-24 relative overflow-visible">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Key Features</h2>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">Key Features</h2>
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8"></div>
+            <p className="text-xl text-gray-300">
+              Cutting-edge tools designed to protect your digital identity with enterprise-grade security.
+            </p>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20 overflow-visible">
             {/* Feature 1 */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl blur-xl"></div>
-              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-hidden shadow-[0_0_25px_rgba(59,130,246,0.1)]">
-                <div className="bg-blue-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl transform group-hover:scale-105 transition-transform duration-500"></div>
+              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-hidden shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
+                <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500"></div>
+                <div className="bg-gradient-to-br from-blue-500/30 to-blue-600/30 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">Data Breach Scanning</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors duration-300">Data Breach Scanning</h3>
+                <p className="text-gray-300 mb-6 group-hover:text-gray-200 transition-colors duration-300">
                   Our core feature allows you to scan for your personal information across billions of breached records, using privacy-preserving techniques.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Anonymous and secure scanning</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Comprehensive database of known breaches</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Instant results on your exposure</span>
                   </li>
                 </ul>
@@ -73,34 +141,41 @@ export default function Features() {
             {/* Feature 2 */}
             <div className="relative group overflow-visible">
               <ComingSoonBadge className="z-50" />
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl blur-xl"></div>
-              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 shadow-[0_0_25px_rgba(59,130,246,0.1)] h-full">
-                <div className="bg-blue-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl transform group-hover:scale-105 transition-transform duration-500"></div>
+              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
+                <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500"></div>
+                <div className="bg-gradient-to-br from-blue-500/30 to-blue-600/30 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">Continuous Monitoring & Alerts</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors duration-300">Continuous Monitoring & Alerts</h3>
+                <p className="text-gray-300 mb-6 group-hover:text-gray-200 transition-colors duration-300">
                   Our systems will continuously monitor for new breaches and send you real-time alerts if your information is compromised.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Real-time alerts for potential exposures</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Detailed reports on affected services</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Guided remediation steps</span>
                   </li>
                 </ul>
@@ -110,34 +185,41 @@ export default function Features() {
             {/* Feature 3 */}
             <div className="relative group overflow-visible">
               <ComingSoonBadge className="z-50" />
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl blur-xl"></div>
-              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 shadow-[0_0_25px_rgba(59,130,246,0.1)] h-full">
-                <div className="bg-blue-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl transform group-hover:scale-105 transition-transform duration-500"></div>
+              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
+                <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500"></div>
+                <div className="bg-gradient-to-br from-blue-500/30 to-blue-600/30 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">Password Check</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-300 transition-colors duration-300">Password Check</h3>
+                <p className="text-gray-300 mb-6 group-hover:text-gray-200 transition-colors duration-300">
                   Check if your passwords have been compromised in known data breaches and receive alerts for vulnerable credentials.
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Scan against massive breach database</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Get notified of pwned passwords</span>
                   </li>
                   <li className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="bg-blue-500/20 p-1 rounded-full mr-2 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <span className="text-gray-300">Securely check without exposing passwords</span>
                   </li>
                 </ul>
@@ -272,24 +354,32 @@ export default function Features() {
         </div>
       </section>
       
-      {/* CTA section */}
-      <section className="py-16 md:py-24 relative">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 md:p-12 rounded-2xl border border-blue-900/30 text-center relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
-            
-            <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Join the Chaos (Mission*)</h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Building a more private internet — one sketchy breach at a time. Jump in or just cheer from the sidelines. 🫡
-              </p>
-              <Link href="/" className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all">
-                <span>Get Started</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </Link>
+      {/* CTA Section */}
+      <section className="py-20 md:py-28 relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-purple-900/10"></div>
+        <div className="container mx-auto px-6 relative">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl"></div>
+              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-12 rounded-3xl border border-blue-900/30 overflow-hidden shadow-[0_0_35px_rgba(59,130,246,0.2)]">
+                <div className="absolute -top-24 -right-24 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl"></div>
+                <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl"></div>
+                
+                <div className="text-center">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">Ready to Secure Your Digital Identity?</h2>
+                  <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Take control of your online presence today and protect yourself from data breaches with DataShadow.
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-4">
+                    <Link href="/scan" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:from-blue-600 hover:to-blue-700 transition-colors shadow-[0_0_20px_rgba(59,130,246,0.5)] font-medium text-lg">
+                      Start Your Free Scan
+                    </Link>
+                    <Link href="/how-it-works" className="px-8 py-4 bg-transparent border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors font-medium text-lg">
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

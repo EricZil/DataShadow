@@ -16,9 +16,9 @@ export default function Hero() {
             <Link href="/scan" className="px-8 py-3.5 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors shadow-[0_0_15px_rgba(59,130,246,0.5)] font-medium text-base">
               Check Your Exposure
             </Link>
-            <button className="px-8 py-3.5 bg-transparent border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors font-medium text-base">
+            <Link href="/how-it-works" className="px-8 py-3.5 bg-transparent border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors font-medium text-base">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center">

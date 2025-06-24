@@ -17,16 +17,69 @@ export default function HowItWorks() {
       {/* Hero section */}
       <section className="relative pt-20 pb-16 md:pt-28 md:pb-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">How It Works</h1>
-            <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-300 mb-8">
-            DataShadow helps you check if your info&apos;s been leaked — without revealing it.
-            <br />
-            We hash your email, use a k-anonymity method, and never store anything.
-            <br />
-            Simple, private, and fast. No shady stuff.
-            </p>
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="md:w-1/2 mb-10 md:mb-0">
+              <div className="max-w-2xl mx-auto md:mx-0 text-center md:text-left">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
+                  How It Works
+                </h1>
+                <div className="h-1 w-24 bg-gradient-to-r from-blue-400 to-blue-600 mb-8 md:mx-0 mx-auto"></div>
+                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                  DataShadow helps you check if your info&apos;s been leaked — without revealing it.<br />
+                  We hash your email, use a k-anonymity method, and never store anything.<br />
+                  Simple, private, and fast. No shady stuff.
+                </p>
+                <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                  <Link href="/scan" className="px-8 py-3.5 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors shadow-[0_0_15px_rgba(59,130,246,0.5)] font-medium text-base">
+                    Try a Scan
+                  </Link>
+                  <Link href="/features" className="px-8 py-3.5 bg-transparent border border-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors font-medium text-base">
+                    See Features
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-1/2 relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl"></div>
+              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-hidden shadow-[0_0_25px_rgba(59,130,246,0.2)]">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-4">
+                    <div className="h-24 bg-gradient-to-br from-[#1a2035] to-[#1f2937] rounded-xl flex items-center justify-center p-4 transform hover:scale-105 transition-transform shadow-lg">
+                      <div className="text-center">
+                        <div className="text-blue-400 font-bold text-lg">0%</div>
+                        <div className="text-gray-400 text-sm">Data Stored</div>
+                      </div>
+                    </div>
+                    <div className="h-32 bg-gradient-to-br from-[#1a2035] to-[#1f2937] rounded-xl flex items-center justify-center p-4 transform hover:scale-105 transition-transform shadow-lg">
+                      <div className="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-blue-400 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <div className="text-gray-300 text-sm">K-Anonymity</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="h-32 bg-gradient-to-br from-[#1a2035] to-[#1f2937] rounded-xl flex items-center justify-center p-4 transform hover:scale-105 transition-transform shadow-lg">
+                      <div className="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-blue-400 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <div className="text-gray-300 text-sm">Breach Detection</div>
+                      </div>
+                    </div>
+                    <div className="h-24 bg-gradient-to-br from-[#1a2035] to-[#1f2937] rounded-xl flex items-center justify-center p-4 transform hover:scale-105 transition-transform shadow-lg">
+                      <div className="text-center">
+                        <div className="text-blue-400 font-bold text-lg">100%</div>
+                        <div className="text-gray-400 text-sm">Private</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl"></div>
+                <div className="absolute -top-3 -left-3 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

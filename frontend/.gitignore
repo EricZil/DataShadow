@@ -40,3 +40,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# development-only files
+/src/app/test
+/src/app/debug
+/src/app/admin
+/src/app/dev
+/src/app/api/test*
+/src/app/api/check
+/src/app/api/debug
+/src/app/api/direct
+
+# end of development-only files

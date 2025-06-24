@@ -74,13 +74,13 @@ async function getBreachesDb(): Promise<BreachDb> {
 async function handler(req: VercelRequest, res: VercelResponse) {
     // Set CORS headers first, before any potential errors
     // Allow requests from the frontend origin or local development
-    const allowedOrigins = FRONTEND_URL ? FRONTEND_URL.split(',') : ['http://localhost:3000'];
+    const allowedOrigins = FRONTEND_URL ? FRONTEND_URL.split(',') : [];
     const origin = req.headers.origin || '';
     
     // Check if the request origin is allowed
-    if (allowedOrigins.includes(origin) || origin.includes('localhost')) {
+    if (allowedOrigins.includes(origin)) {
         res.setHeader('Access-Control-Allow-Origin', origin);
-    } else {
+    } else if (allowedOrigins.length > 0) {
         // For requests without an origin header or from unknown origins
         res.setHeader('Access-Control-Allow-Origin', allowedOrigins[0]);
     }

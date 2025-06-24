@@ -97,7 +97,7 @@ const handler = async (req: VercelRequest, res: VercelResponse): Promise<void> =
         const upperPrefix = sanitizedPrefix.toUpperCase();
 
         // Determine the password file path
-        const passwordFilePath = `pwned-passwords/${upperPrefix}.txt`;
+        const passwordFilePath = `pwned-password/${upperPrefix}.txt`;
         
         // Try to fetch the password file for this prefix
         const command = new GetObjectCommand({
