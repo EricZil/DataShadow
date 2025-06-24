@@ -79,6 +79,9 @@ export default function Scan() {
             const prefix = hash.substring(0, 5);
             const suffix = hash.substring(5);
 
+            // Debug log for outgoing request
+            console.log('SCAN DEBUG:', { prefix, suffix, url: `/api/check?prefix=${prefix}&suffix=${suffix}` });
+
             const response = await fetch(`/api/check?prefix=${prefix}&suffix=${suffix}`);
 
             if (response.status === 404) {
