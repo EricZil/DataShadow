@@ -1,0 +1,7 @@
+{
+  "1": {
+    "name": "Naz.API",
+    "date": "2023-09-20",
+    "exposedData": ["Email", "Password"]
+  }
+} 

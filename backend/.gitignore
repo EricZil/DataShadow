@@ -25,3 +25,9 @@ ingestion/
 # Ignore environment files
 .env 
 .vercel
+
+# development-only files
+/api/test-*
+/api/debug*
+/api/prefixes
+# end of development-only files
