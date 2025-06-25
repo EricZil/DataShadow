@@ -1,51 +1,39 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 
 export default function BreachPage({ params }) {
   const router = useRouter();
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [breachData, setBreachData] = React.useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [breachData, setBreachData] = useState(null);
+  const [error, setError] = useState(null);
   
   // Unwrap params using React.use()
   const unwrappedParams = React.use(params);
   const breachId = unwrappedParams.id;
 
-  React.useEffect(() => {
-    // Simulate loading and API call
-    const timer = setTimeout(() => {
-      // Mock breach data (since we can't call Notion API from client-side)
-      const mockBreachData = {
-        id: breachId,
-        title: `Data Breach: ${breachId.substring(0, 8)}`,
-        company: "Example Corporation",
-        pwnedCount: 1500000,
-        date: "2023-05-15",
-        dataTypes: ["Email addresses", "Passwords", "Names", "Phone numbers"],
-        severity: "high",
-        status: "completed",
-        summary: "A significant data breach affecting users of Example Corporation's services.",
-        fullDescription: "In May 2023, Example Corporation discovered unauthorized access to their user database. The breach exposed personal information of approximately 1.5 million users including email addresses, hashed passwords, names, and phone numbers. The company has since patched the vulnerability and reset all user passwords as a precautionary measure.",
-        recommendations: [
-          "Change your password immediately if you use the same password on other sites",
-          "Enable two-factor authentication on your accounts",
-          "Monitor your accounts for suspicious activity",
-          "Be cautious of phishing attempts that may reference this breach"
-        ],
-        sources: [
-          "Example Corporation Security Notice (May 16, 2023)",
-          "Cybersecurity Researcher Report (May 18, 2023)"
-        ]
-      };
-      
-      setBreachData(mockBreachData);
-      setIsLoading(false);
-    }, 1000);
-
-    return () => clearTimeout(timer);
+  useEffect(() => {
+    async function fetchBreachData() {
+      try {
+        const response = await fetch(`/api/breaches/${breachId}`);
+        if (!response.ok) {
+          throw new Error(`API error: ${response.status}`);
+        }
+        const data = await response.json();
+        setBreachData(data);
+      } catch (err) {
+        console.error("Error fetching breach data:", err);
+        setError(err.message);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchBreachData();
   }, [breachId]);
 
   if (isLoading) {
@@ -63,24 +51,32 @@ export default function BreachPage({ params }) {
     );
   }
 
+  if (error) {
+    return (
+      <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#0A0E17] via-[#0F1419] to-[#0A0E17] text-white">
+        <Header />
+        <main className="flex-1 flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold mb-4">Error</h1>
+            <p className="text-lg text-red-400 mb-6">{error}</p>
+            <button 
+              onClick={() => router.back()} 
+              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+            >
+              Go Back
+            </button>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#0A0E17] via-[#0F1419] to-[#0A0E17] text-white">
       <Header />
       <main className="flex-1 py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          {/* Notion API Error Disclaimer */}
-          <div className="mb-12 p-4 bg-yellow-500/10 border border-yellow-500/30 rounded-lg">
-            <div className="flex items-start">
-              <svg className="w-6 h-6 text-yellow-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-              </svg>
-              <p className="text-left text-yellow-300">
-                <span className="font-semibold">Note:</span> The Notion API integration is currently experiencing issues. 
-                The breach details shown below are mock data. Please check the devlog on SoM for updates.
-              </p>
-            </div>
-          </div>
-          
           {breachData ? (
             <div className="space-y-12">
               <div className="text-center">
@@ -147,16 +143,26 @@ export default function BreachPage({ params }) {
                   <h2 className="text-2xl font-bold text-white mb-4">Sources</h2>
                   <ul className="list-disc pl-5 space-y-2 text-gray-300">
                     {breachData.sources.map((source, index) => (
-                      <li key={index}>{source}</li>
+                      <li key={index}>
+                        <ReactMarkdown
+                          components={{
+                            a: ({node, ...props}) => (
+                              <a {...props} className="text-blue-400 underline hover:text-blue-300" target="_blank" rel="noopener noreferrer" />
+                            )
+                          }}
+                        >
+                          {source}
+                        </ReactMarkdown>
+                      </li>
                     ))}
                   </ul>
                 </div>
               )}
               
-              <div className="text-center">
+              <div className="flex justify-center gap-4">
                 <button 
                   onClick={() => router.back()} 
-                  className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+                  className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
                 >
                   Go Back
                 </button>

@@ -6,6 +6,7 @@ const csp = `
   img-src 'self' https://summer.hackclub.com https://avatars.githubusercontent.com;
   script-src 'self' 'unsafe-inline' 'unsafe-eval';
   style-src 'self' 'unsafe-inline';
+  frame-src 'self' https://status.datashadow.eryxks.xyz;
 `.replace(/\s{2,}/g, ' ').trim();
 
 const securityHeaders = [

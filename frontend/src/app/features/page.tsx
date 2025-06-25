@@ -3,6 +3,9 @@ import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import ComingSoonBadge from '../../components/ComingSoonBadge';
+import InProgressBadge from '../../components/InProgressBadge';
+import LiveNowBadge from '../../components/LiveNowBadge';
+import SoMVotingBadge from '../../components/SoMVotingBadge';
 
 export default function Features() {
   return (
@@ -97,8 +100,9 @@ export default function Features() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20 overflow-visible">
             {/* Feature 1 */}
             <div className="relative group">
+              <LiveNowBadge className="z-[100]" />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl transform group-hover:scale-105 transition-transform duration-500"></div>
-              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-hidden shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
+              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-visible shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
                 <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500"></div>
                 <div className="bg-gradient-to-br from-blue-500/30 to-blue-600/30 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -140,9 +144,9 @@ export default function Features() {
             
             {/* Feature 2 */}
             <div className="relative group overflow-visible">
-              <ComingSoonBadge className="z-50" />
+              <SoMVotingBadge className="z-[100]" />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl transform group-hover:scale-105 transition-transform duration-500"></div>
-              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
+              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-visible shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
                 <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500"></div>
                 <div className="bg-gradient-to-br from-blue-500/30 to-blue-600/30 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -184,9 +188,9 @@ export default function Features() {
 
             {/* Feature 3 */}
             <div className="relative group overflow-visible">
-              <ComingSoonBadge className="z-50" />
+              <InProgressBadge className="z-[100]" />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl transform group-hover:scale-105 transition-transform duration-500"></div>
-              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
+              <div className="relative bg-gradient-to-br from-[#111827]/90 to-[#1f2937]/90 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-visible shadow-[0_0_25px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_35px_rgba(59,130,246,0.2)] transition-all duration-500 h-full">
                 <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500"></div>
                 <div className="bg-gradient-to-br from-blue-500/30 to-blue-600/30 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(59,130,246,0.3)] group-hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-500">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -228,9 +232,9 @@ export default function Features() {
             
             {/* Feature 4 */}
             <div className="relative group overflow-visible">
-              <ComingSoonBadge className="z-50" />
+              <SoMVotingBadge className="z-[100]" />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl blur-xl"></div>
-              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 shadow-[0_0_25px_rgba(59,130,246,0.1)] h-full">
+              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-visible shadow-[0_0_25px_rgba(59,130,246,0.1)] h-full">
                 <div className="bg-blue-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m-9 4h12M3 7h18M4 7h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7z" />
@@ -265,9 +269,9 @@ export default function Features() {
 
             {/* Feature 5 */}
             <div className="relative group overflow-visible">
-              <ComingSoonBadge className="z-50" />
+              <SoMVotingBadge className="z-[100]" />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl blur-xl"></div>
-              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 shadow-[0_0_25px_rgba(59,130,246,0.1)] h-full">
+              <div className="relative bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-8 rounded-3xl border border-blue-900/30 overflow-visible shadow-[0_0_25px_rgba(59,130,246,0.1)] h-full">
                 <div className="bg-blue-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 18a9 9 0 009-9M3 12a9 9 0 009 9" />
@@ -311,7 +315,7 @@ export default function Features() {
           <div className="grid md:grid-cols-3 gap-8 overflow-visible">
             {/* Feature card 1 */}
             <div className="bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30 hover:border-blue-700/50 transition-all relative group overflow-visible">
-              <ComingSoonBadge className="z-50" />
+              <ComingSoonBadge className="z-[100]" />
               <div className="bg-blue-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -323,9 +327,9 @@ export default function Features() {
               </p>
             </div>
             
-            {/* Feature card 2 */}
+            {/* Feature card 2 - Automated Privacy Scans */}
             <div className="bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30 hover:border-blue-700/50 transition-all relative group overflow-visible">
-              <ComingSoonBadge className="z-50" />
+              <SoMVotingBadge className="z-[100]" />
               <div className="bg-blue-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -337,9 +341,9 @@ export default function Features() {
               </p>
             </div>
             
-            {/* Feature card 3 */}
+            {/* Feature card 3 - Multi-Factor Authentication */}
             <div className="bg-gradient-to-br from-[#111827]/80 to-[#1f2937]/80 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30 hover:border-blue-700/50 transition-all relative group overflow-visible">
-              <ComingSoonBadge className="z-50" />
+              <SoMVotingBadge className="z-[100]" />
               <div className="bg-blue-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />

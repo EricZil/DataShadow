@@ -133,15 +133,31 @@ export default function About() {
             
             <div className="order-1 md:order-2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Our Story</h2>
-              <p className="text-lg text-gray-300 mb-6">
-              DataShadow started as a solo project during Hack Club&apos;s Summer of Making — just one developer (hi, it&apos;s me 👋) trying to build something useful.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-              I wanted to create a tool that helps people check if their data has been leaked, without needing tech skills or giving up their privacy.
-              </p>
-              <p className="text-lg text-gray-300">
-              What began as a summer experiment is now a working platform that blends simplicity, speed, and privacy-first design — with more improvements on the way.
-              </p>
+              
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-6">
+                <div className="flex-1">
+                  <p className="text-lg text-gray-300 mb-4">
+                  DataShadow started as a solo project during Hack Club&apos;s Summer of Making — just one developer (hi, it&apos;s me 👋) trying to build something useful.
+                  </p>
+                  <p className="text-lg text-gray-300 mb-4">
+                  I wanted to create a tool that helps people check if their data has been leaked, without needing tech skills or giving up their privacy.
+                  </p>
+                  <p className="text-lg text-gray-300">
+                  What began as a summer experiment is now a working platform that blends simplicity, speed, and privacy-first design — with more improvements on the way.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-center mt-6 bg-gradient-to-br from-[#111827]/60 to-[#1f2937]/60 p-4 rounded-xl border border-blue-900/20">
+                <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <p className="text-blue-300 text-sm italic">
+                &quot;The journey of building DataShadow is far from over — I&apos;m excited to keep helping people protect their digital identities while growing every day as a developer.&quot;
+                </p>
+              </div>
             </div>
           </div>
         </div>
