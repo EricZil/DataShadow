@@ -4,7 +4,7 @@
   
 [![Built at Hack Club](https://img.shields.io/badge/Built%20at-Hack%20Club-fa0f00?style=for-the-badge)](https://hackclub.com/)
 [![Summer of Making](https://img.shields.io/badge/Summer%20of%20Making-2025-blue?style=for-the-badge)](https://summer.hackclub.com)
-[![Status](https://img.shields.io/badge/Status-Work%20In%20Progress-yellow?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Shipped-green?style=for-the-badge)]()
 
 <a href="https://github-readme-stats.hackclub.dev/api/wakatime?username=4782&api_domain=hackatime.hackclub.com&theme=radical&custom_title=Hackatime+Stats&layout=compact">
   <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=4782&api_domain=hackatime.hackclub.com&theme=radical&custom_title=Hackatime+Stats&layout=compact" alt="Hackatime Stats" />
@@ -20,9 +20,34 @@ DataShadow is your personal digital bodyguard in the wild west of the internet! 
 
 **Also!** DataShadow's bff - Claude AI ❤️
 
-> **⚠️ HEADS UP!** This project is just getting started! We're in the very early stages of development, so what you see now is just the beginning. Features mentioned below are what we're working towards, but they might change as we build. Stay tuned!
+> **⚠️ HEADS UP!** This project has been shipped to SoM! But it's not over;)
 
 ## 📓 Devlog
+
+### Devlog #8 - Chaos over?
+![Devlog #8](https://cdn2.eryxks.cloud/devlog%238.png)
+
+Welp, finally fixed everything (kinda... I think?) <br>
+
+Sooo, lil recap of my brain meltdown: <br>
+made a status page cuz things kept going 💥 <br>
+added FAQ, password check, status badge (badge makes it feel official idk lol) <br>
+header & footer got facelifts <br>
+features, how it works, about – all went shopping (a bit) <br>
+backend currently stable (as for now) (but like... barely, I breathe on it wrong and it goes 404) <br>
+added some backend security (will double check when I trust myself again) <br>
+
+basically… this is all I can do for now <br>
+need more resources (aka people want my credit card lol no thx) <br>
+but hey, gonna push this project more — just not in devlog format anymore. <br>
+dashboard UI is already designed btw 👀 might leak it on GitHub README if I feel spicy. <br>
+
+from now on backend updates gonna be in the shadows (get it... DataShadow… ha...) <br>
+also found out Cloudflare R2 is like "free" but not really (tysm for the 1M A ops limit 💔), so now hunting for new S3/r2-ish thing that won’t cry when I upload 1M files 💀 <br>
+this is the last devlog (unless I get possessed again with a new project) <br>
+thanks if you read these at all <br>
+it’s been messy, but fun as hell <br>
+made with 0 budget, 6 liters of caffeine, and ✨love✨ by Eric (ft. Claude AI my emotional support bot, and not only;))
 
 ### Devlog #7 - Chaos
 ![Devlog #7](https://cdn2.eryxks.cloud/devlog%237.png)
@@ -99,10 +124,11 @@ Stay tuned for chaos!
   - Comprehensive database of known breaches
   - Instant results on your exposure
 
-## 🔮 Planned Features
+- **Password Check**: Check if your passwords have been compromised.
+
+## 🔮 Planned Features (After SoM voting)
 
 - **Continuous Monitoring & Alerts**: Get real-time alerts if your information is compromised in new breaches.
-- **Password Check**: Check if your passwords have been compromised.
 - **Privacy Dashboard**: A centralized dashboard to view your exposure and manage alerts.
 - **Domain Check**: Monitor an entire domain for compromised email accounts.
 - **Disposable Email Aliases**: Create unlimited email aliases to protect your primary email.
@@ -112,6 +138,7 @@ Stay tuned for chaos!
 - [Next.js](https://nextjs.org/) - The React framework
 - [TypeScript](https://www.typescriptlang.org/) - For type safety
 - [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Cloudflare R2](https://www.cloudflare.com/developer-platform/products/r2/) - Cloud Storage
 - A sprinkle of magic ✨ and a dash of humor 😄
 
 ## 🤝 Contribute
